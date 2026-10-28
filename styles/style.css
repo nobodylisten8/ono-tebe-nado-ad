@@ -1,6 +1,15 @@
+/* СБРОС СТИЛЕЙ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-
-/* ===== ШАПКА ===== */
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+/* ШАПКА */
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -16,7 +25,7 @@
 
 .header__links-list {
   display: flex;
-  gap: 15px; /* Равномерный отступ между всеми пунктами */
+  gap: 15px;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -62,12 +71,11 @@
 
 .header__address {
   justify-self: end;
-  width: 236px; /* Фиксированная ширина для естественного переноса */
+  width: 236px;
   margin-top: 95px;
   margin-right: 50px;
 }
 
-/* Общий класс для адреса */
 .address {
   font-style: normal;
   display: flex;
@@ -88,7 +96,7 @@
   display: block;
 }
 
-/* ===== ОБЛОЖКА ===== */
+/* ОБЛОЖКА */
 .cover {
   position: relative;
   background: url(../images/cover.jpg) center no-repeat;
@@ -110,25 +118,22 @@
   font-size: 100px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 30px; /* пиксели, не проценты! */
+  letter-spacing: 30px;
   margin: 0;
 }
 
-/* ОНО - левое */
 .aligned-text {
   display: block;
   text-align: left;
   padding: 1px 0 0 0;
 }
 
-/* ТЕБЕ - центральное, сдвиг вправо и вниз */
 .aligned-text_center {
   display: block;
   text-align: center;
   padding: 19px 0 0 30px;
 }
 
-/* НАДО - правое, сдвиг вниз */
 .aligned-text_right {
   display: block;
   text-align: right;
@@ -164,7 +169,7 @@
   font-family: inherit;
 }
 
-/* ===== ЛОТЫ ===== */
+/* ЛОТЫ */
 .lots {
   padding: 180px 24px 0;
 }
@@ -255,7 +260,7 @@
   text-decoration-thickness: 0.5px;
 }
 
-/* ===== ОБ АУКЦИОНЕ ===== */
+/* ОБ АУКЦИОНЕ */
 .about {
   display: grid;
   grid-template-columns: 240px 692px;
@@ -306,7 +311,7 @@
   margin: 0;
 }
 
-/* ===== ПОДВАЛ ===== */
+/* ПОДВАЛ */
 .footer {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
